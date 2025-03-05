@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01_form_basic</title>
+  </head>
+  <body>
+    <!-- form -> 사용자로부터 입력ㅇ르 받기 위한 양식을 만드는데 사용 주요속성: -
+    action: 폼 데이터를 전송할 서버의 URL - method: 데이터를 보낼 때 전송 방식
+    (GET, POST) -->
+    <h1>01_form_basic</h1>
+    <!-- input 태그의 속성
+    type: 입력 필드의 종류
+    id: 요소의 고유 식별자
+    name: 서버로 전송될 때 사용되는 이름
+    value: 입력필드의 초기값 -->
+    <form>
+      <table>
+        <tr>
+          <td>이름</td>
+          <td colspan="2">
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="이름을 입력해주세요."
+              value="홍길동"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>성별</td>
+          <td><input type="radio" name="gender" id="man" /></td>
+          <label for="man"></label>
+          <td><input type="radio" name="gender" id="woman" />여자</td>
+          <label for="woman"></label>
+        </tr>
+      </table>
+      <input type="submit" value="가입" />
+    </form>
+  </body>
+</html>
