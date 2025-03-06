@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05_position_absoluteLeftTop</title>
+    <style>
+      .box:first-of-type {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 50px;
+        right: -50px;
+      }
+      .box {
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        right: -100px;
+      }
+      .box:last-of-type {
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: -50px;
+        right: -150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </body>
+</html>

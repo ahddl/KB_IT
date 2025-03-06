@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05_position_absoluteLeftTop</title>
+    <style>
+      div {
+        position: absolute;
+      }
+      .box:first-of-type {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: -50px;
+        right: -150px;
+      }
+      .box {
+        background-color: green;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: -200px;
+      }
+      .box:last-of-type {
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: -250px;
+        top: 50px;
+      }
+      h1 * {
+        position: relative;
+        right: -100px;
+        top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem ipsum dolor amet</h1>
+    <div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+    <h1>Lorem ipsum dolor amet</h1>
+  </body>
+</html>
