@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20_display_inline</title>
+    <style>
+      #box {
+        display: inline;
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <span style="border: 1px solid gray; padding: 5px">
+      <span>더미 객체</span>
+      <div id="box">대상 객체</div>
+      <span>더미 객체</span>
+    </span>
+  </body>
+</html>
+
+<!-- 
+display 값
+-block
+-inline
+-inline-block : 인라인처럼 배치는 되고, 높이/너비 설정가능
+-none
+-flex: 레이아웃 구성을 위한 컨테이너를 설정
+-grid: 그리드 기반 -->
