@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04_structure</title>
+  </head>
+  <body>
+    <h1>04_structure</h1>
+    <style>
+      .sample li {
+        border: 1px solid lightblue;
+      }
+      .sample li:first-child {
+        border: 1px solid tomato;
+      }
+      .sample li:last-child {
+        border: 1px solid blueviolet;
+      }
+      .sample div {
+        border: 1px solid lightblue;
+      }
+      .sample div:first-child {
+        border: 1px solid tomato;
+      }
+      .sample div:first-of-type {
+        border: 1px solid tomato;
+      }
+      .sample div:last-child {
+        border: 1px solid tomato;
+      }
+      .sample div:nth-of-type(2n + 1) {
+        background-color: blanchedalmond;
+      }
+      /* .test.sample li {
+        border: 1px solid tomato;
+      } 이 부분 이해 못함*/
+    </style>
+    <ul class="sample test">
+      <li>test1</li>
+      <li>test2</li>
+      <li>test3</li>
+      <li>test4</li>
+      <li>test5</li>
+    </ul>
+    <div class="sample test">
+      <p>추가된요소</p>
+      <div>test1</div>
+      <div>test2</div>
+      <div>test3</div>
+      <div>test4</div>
+      <div>test5</div>
+    </div>
+  </body>
+</html>

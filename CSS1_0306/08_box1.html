@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>08_box1</title>
+  </head>
+  <body>
+    <h1>08_box1</h1>
+    <style>
+      div {
+        border: 1px solid red;
+        width: 300px;
+        height: 300px;
+        box-sizing: border-box;
+        margin: 2rem;
+      }
+      .box1 {
+        padding: 2rem;
+        border-width: 10px;
+        border-top-style: dotted;
+        /* margin: 2rem; */
+        border-radius: 2re;
+      }
+      .box2 {
+        padding: 2rem;
+        border-radius: 2rem/1rem;
+      }
+      .btn1 {
+        background-color: transparent;
+        border: 2px solid lightcoral;
+        border-radius: 20px;
+        width: 100px;
+        height: 40px;
+        display: block;
+      }
+    </style>
+    <button class="btn1">버튼</button>
+    <button class="btn1">버튼</button>
+    <button class="btn1">버튼</button>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+  </body>
+</html>
