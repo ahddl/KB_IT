@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03_position</title>
+    <style>
+      .sec1 {
+        border: 5px solid lightgray;
+        padding: 1rem;
+      }
+      .sec1 > div {
+        border: 1px solid red;
+        position: absolute;
+      }
+      .sec1 > div:nth-last-of-type(1) {
+        top: 0;
+      }
+      .sec1 > div:nth-last-of-type(2) {
+        top: 0;
+      }
+      .sec1 > div:nth-last-of-type(3) {
+        top: 0;
+      }
+      .sec1 > div:nth-last-of-type(4) {
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>03_position</h1>
+    <section>
+      <div>box1</div>
+      <div>box2</div>
+      <div>box3</div>
+      <div>box4</div>
+    </section>
+  </body>
+</html>

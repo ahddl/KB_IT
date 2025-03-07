@@ -1,0 +1,61 @@
+#app > * {
+  border: 1px solid wheat;
+}
+.hd,
+main,
+.foot {
+  max-width: 1000px;
+  width: calc(100% - 2rem);
+  margin: auto;
+}
+.hd {
+  display: flex;
+  padding: 10px;
+}
+.hd > * {
+  border: 1px solid red;
+}
+.hd > nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+.gnb {
+  display: flex;
+  gap: 1rem;
+}
+.gnb > li {
+  border: 1px solid tomato;
+}
+.gnb a {
+  padding: 1rem;
+}
+.gnb a:hover {
+  background-color: lightcyan;
+}
+
+/*  */
+main {
+  border: 5px solid lightgray;
+  display: flex;
+}
+main > * {
+  border: 1px so red;
+  width: calc(100% / 3);
+  height: 400px;
+}
+.sec1 {
+  order: -1;
+}
+
+/*  */
+h2 {
+  position: relative;
+}
+h2 img {
+  position: absolute;
+  width: 200px;
+  bottom: -50px;
+  left: 50%;
+  /* transform: ; */
+}
