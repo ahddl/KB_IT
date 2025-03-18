@@ -3,39 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>05_position_absoluteLeftTop</title>
+    <title>06</title>
     <style>
-      div {
-        position: absolute;
-      }
-      .box:first-of-type {
-        background-color: red;
+      /* div {
         width: 100px;
         height: 100px;
-        position: absolute;
-        top: -50px;
-        right: -150px;
+      } */
+      .box:first-of-type {
+        background-color: red;
+        top: 0px;
+        left: 0px;
       }
       .box {
         background-color: green;
         width: 100px;
         height: 100px;
+        top: 50px;
+        left: 50px;
         position: absolute;
-        right: -200px;
       }
       .box:last-of-type {
         background-color: blue;
-        width: 100px;
-        height: 100px;
+        left: 100px;
+        top: 100px;
+      }
+      /* h1 * {
         position: absolute;
-        right: -250px;
-        top: 50px;
-      }
-      h1 * {
-        position: relative;
-        right: -100px;
-        top: 50px;
-      }
+      } */
     </style>
   </head>
   <body>
